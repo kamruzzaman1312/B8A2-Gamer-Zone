@@ -72,7 +72,7 @@ body {
 }
 .banner-upper {
     display: flex;
-    padding: 50px 50px 0px 50px;
+    padding: 50px;
 }
 .banner-upper-info-div {
     width: 50%;
@@ -122,12 +122,23 @@ body {
     margin-bottom: 5px;
 }
 
-games-vedio-container
-.games-vedio-collection {
+/* games-vedio-container */
+.games-vedio-collection {   
     display: flex;
+    justify-content: center;
+}
+.game-vedio {
+    margin-right: 5px;
 }
 .games-vedio-info {
     text-align: center;
+}
+.games-vedio-info h2 {
+    margin-bottom: 0px;
+}
+.game-vedio-img {
+    max-width: 240px;
+    max-height: 280px;
 }
 
 
@@ -161,8 +172,24 @@ games-vedio-container
         width: 100%;
         padding-top: 50px;
     }
-    .banner-upper-image-div {
-       
+    .banner-upper-image-div {       
         width: 100%;
+    }
+    /* gamming vedio part  */
+    .games-vedio-collection {   
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .game-vedio-img {
+        max-width: 300px;
+        max-height: 350px;
+    }
+}
+
+/* tablet device style  */
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .games-vedio-collection {   
+        flex-wrap: wrap;
     }
 }
