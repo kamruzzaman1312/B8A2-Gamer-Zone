@@ -3,8 +3,21 @@
 /* common style  */
 body {
     font-family: 'Work Sans', sans-serif;
+    max-width: 1400px;
+    margin: 0px auto;
 }
-
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+.description {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main {
+    margin: 0px 100px;
+}
 /* header part style  */
 
 /* nav bar style  */
@@ -14,6 +27,7 @@ body {
     align-items: center;
     padding: 10px 100px 10px 100px;
     margin-top: 40px;
+    margin-bottom: 10px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -51,9 +65,75 @@ body {
     color: red;
 }
 
+/* banner part style  */
+.banner {
+    background-color: rgba(237, 149, 212, 0.166);
+    margin-bottom: 100px;
+}
+.banner-upper {
+    display: flex;
+    padding: 50px 50px 0px 50px;
+}
+.banner-upper-info-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-upper-image-div {
+    width: 50%;
+}
+.banner-upper-image {
+    max-width: 100%;
+}
+.banner-upper-info h2 {
+    color: #0B0223;
+    margin: 0px;
+}
+.banner-upper-info h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin: 0px;
+}
+.banner-upper-info p {
+    margin: 10px;
+}
+.banner-upper-info i {
+    margin-right: 5px;
+    padding: 5px;
+    border: 3px solid #FFF;
+    border-radius: 5px;
+    color: #FF42A5;
+}
+.banner-upper-info p span {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+}
+.btn-primary {
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #FF42A5;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+games-vedio-container
+.games-vedio-collection {
+    display: flex;
+}
+.games-vedio-info {
+    text-align: center;
+}
+
 
 /* mobile device style  */
 @media screen and (max-width: 768px) {
+    /* nav var style  */
     .nav-container,
     .nav-menu ul {
         flex-direction: column;
@@ -70,5 +150,19 @@ body {
     }
     .nav-menu ul li {
         margin-bottom: 10px;
+    }
+    /* banner part style  */
+    .banner-upper {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 5px;
+    }
+    .banner-upper-info-div {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .banner-upper-image-div {
+       
+        width: 100%;
     }
 }
