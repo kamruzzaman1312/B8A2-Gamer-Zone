@@ -3,7 +3,7 @@
 /* common style  */
 body {
     font-family: 'Work Sans', sans-serif;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0px auto;
 }
 .section-title {
@@ -164,7 +164,56 @@ main {
     width: 50px;
     height: 50px;
 }
-
+/* footer part style */
+footer {
+    background-color: #d6d2d2;
+}
+.footer-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 70px;
+    margin-top: 70px;
+}
+.footer-title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    gap: 20px;
+    padding-right: 50px;
+}
+.about-company-container, .social-media-container, .terms-and-condition-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.about-company-container p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-top: 0px;
+}
+.social-media-container a {
+    text-decoration: none;
+}
+.social-media-container i {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+}
+.terms-and-condition-container p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.authorship-container {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /* mobile device style  */
 @media screen and (max-width: 768px) {
@@ -230,7 +279,26 @@ main {
         width: 40px;
         height: 40px;
     }
-    
+    /* footer part style  */
+    .footer-item-container {
+        padding: 0px;
+    }
+    .footer-item-container > div {
+        max-width: 300px;
+    }
+    .about-company-container, .social-media-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;      
+    }
+    .about-company-container p {
+        margin-right: 0px;
+    }
+    .terms-and-condition-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    } 
 }
 
 /* tablet device style  */
