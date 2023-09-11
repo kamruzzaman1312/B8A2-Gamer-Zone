@@ -9,6 +9,7 @@ body {
 .section-title {
     font-size: 48px;
     font-weight: 700;
+    margin: 0px;
 }
 .description {
     color: #534C64;
@@ -88,7 +89,6 @@ main {
 }
 .banner-upper-info h2 {
     color: #0B0223;
-    margin: 0px;
 }
 .banner-upper-info h1 {
     font-size: 80px;
@@ -126,7 +126,7 @@ main {
 .games-vedio-collection {   
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .game-vedio {
     margin-right: 5px;
@@ -134,12 +134,42 @@ main {
 .games-vedio-info {
     text-align: center;
 }
-.games-vedio-info h2 {
-    margin-bottom: 0px;
-}
 .game-vedio-img {
     max-width: 240px;
     max-height: 280px;
+}
+/* middle section */
+.middle-section {
+    display: flex;
+    margin-bottom: 100px;
+}
+.middle-section > div {
+    width: 50%;
+}
+.middle-section-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.transform-img-div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.transform-img-div {
+    position: relative;
+}
+.parent-img {
+    max-width: 450px;
+    max-height: 350px;
+}
+.absolute-img {
+    position: absolute;
+    max-width: 250px;
+    max-height: 150px;
+    bottom: -10%;
+    left: -10%;
 }
 
 /* game container  */
@@ -216,8 +246,11 @@ footer {
 }
 
 /* mobile device style  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /* nav var style  */
+    .section-title {
+        font-size: 40px;
+    }
     .nav-container,
     .nav-menu ul {
         flex-direction: column;
@@ -247,6 +280,27 @@ footer {
     }
     .banner-upper-image-div {       
         width: 100%;
+    }
+    /* middle section style  */
+    .middle-section {
+        flex-direction: column;
+    }
+    .middle-section div {
+        width: 100%;
+        text-align: center;
+    }
+    .transform-img-div {
+        max-width: 350px;
+    }
+    .parent-img {
+        max-width: 350px;
+        max-height: 250px;
+    }
+    .absolute-img {
+        max-width: 150px;
+        max-height: 100px;
+        bottom: -10%;
+        left: 1%;
     }
     /* gamming vedio part  */
     .games-vedio-collection {   
@@ -309,5 +363,21 @@ footer {
     .games-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    /* middle sectin style  */
+    .middle-section {
+        flex-direction: column;
+    }
+    .middle-section div {
+        width: 100%;
+        text-align: center;
+    }
+    .transform-img-div {
+        max-width: 610px;
+        max-height: 500px;
+    }
+    .absolute-img {
+        bottom: -10%;
+        left: 12%;
     }
 }
